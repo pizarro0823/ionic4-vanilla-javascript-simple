@@ -36,22 +36,23 @@
                         <ion-card-content>
                             <ion-item class="ion-margin-vertical"> 
                                  <ion-label position="floating">Base :</ion-label>
-                                 <ion-input type="number"></ion-input>
+                                 <ion-input type="number" id="id_base"></ion-input>
                             </ion-item>
 
                              <ion-item>
                                 <ion-label position="floating">Altura :</ion-label>
-                                <ion-input type="number"></ion-input>
+                                <ion-input type="number" id="id_altura"></ion-input>
                             </ion-item>
-
                            
-  <ion-item>
-    <ion-label>Gender</ion-label>
-    <ion-select placeholder="Select One">
-      <ion-select-option value="f">Female</ion-select-option>
-      <ion-select-option value="m">Male</ion-select-option>
-    </ion-select>
-  </ion-item>
+                            <ion-item>
+                                <ion-label>Naves</ion-label>
+                                <ion-select placeholder="Select One" id="id_naves">
+                                <ion-select-option value="f">2</ion-select-option>
+                                <ion-select-option value="m">3</ion-select-option>
+                                <ion-select-option value="m">4</ion-select-option>
+                                <ion-select-option value="m">L</ion-select-option>
+                                </ion-select>
+                            </ion-item>
                             
                             <ion-button class="ion-margin-vertical"> 
                                 <ion-icon name="calculator-outline" slot="start"></ion-icon> Calcular</ion-button>
@@ -59,6 +60,23 @@
                             <ion-button class="ion-margin-vertical" color="danger"> 
                                 <ion-icon name="trash" slot="start" ></ion-icon> Limpiar
                         </ion-card-content>
+                        <ion-card>
+                            <ion-card-header>
+                                <ion-car-title>Precio:</ion-car-title>
+                                <ion-card-content>
+                                   <ion-row>
+                                       <ion-label>
+                                           minimo
+                                       </ion-label>
+                                   </ion-row>
+                                   <ion-row>
+                                       <ion-label>
+                                        maximo
+                                       </ion-label>
+                                   </ion-row>
+                                </ion-card-content>
+                            </ion-card-header>
+                        </ion-card>
                     </ion-card>
                 </ion-col>
               </ion-row>
